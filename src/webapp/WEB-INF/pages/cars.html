@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H3>Список машин</H3>
+<table >
+    <tr>
+        <th>ID</th>
+        <th>Brand</th>
+        <th>Model</th>
+    </tr>
+    <p th:each="car : ${cars}">
+        <tr>
+            <td th:utext="${car.getId()}">...</td>
+            <td th:utext="${car.getBrand()}">...</td>
+            <td th:utext="${car.getModel()}">...</td>
+        </tr>
+</table>
+</body>
+</html>
