@@ -9,7 +9,9 @@
 <div>
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
+
     </th:block>
+    <a href="cars.html" th:href="@{/cars}">Перейти к списку машин</a>
 </div>
 </body>
 </html>
